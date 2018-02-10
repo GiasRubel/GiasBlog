@@ -15,6 +15,7 @@
  //    return view('welcome');
  // });
 
+// Blog posts Route
 Route::get('/exp', function(){
     return view('home');
 });
@@ -42,8 +43,18 @@ Route::post('/logout','Auth\LoginController@userlogout')->name('user.logout');
 Route::get('/home', 'HomeController@index');
 Route::get('/', 'vlogController@index');
 
+//Api Routes
+Route::get('/api','ApiController@index');
+Route::get('/serchapi','ApiController@serchapi');
+Route::get('/edman','ApiController@recipe')->name('user.recipe');
+
+Route::get('/apitoken', function(){
+    return view('web.createApiToken');
+});
 
 
+
+// Admin Routes
 Route::group(['prefix' => 'admin'], function () {
 
     Route::get('/post','newController@index');

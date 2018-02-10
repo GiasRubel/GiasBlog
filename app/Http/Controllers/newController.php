@@ -37,6 +37,9 @@ class newController extends Controller
       $cats = catagory::all();
       $tags = Tag::all();
    	return view('admin.createpost',compact('cats','tags'));
+      // echo "<pre>";
+      // print_r($cats);
+      // echo "</pre>";
    }
 
    public function store(Request $request)

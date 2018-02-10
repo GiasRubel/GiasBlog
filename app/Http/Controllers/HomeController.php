@@ -27,12 +27,13 @@ class HomeController extends Controller
     public function index()
     {
     
-    $item = post::orderby('id', 'desc')->take(4)->get();
-    $cats = catagory::orderby('id', 'desc')->take(4)->get();
-    $tags = Tag::orderby('id','desc')->take(10)->get();
-    $forslides = post::all();
+    return view('home');
+    // $item = post::orderby('id', 'desc')->take(4)->get();
+    // $cats = catagory::orderby('id', 'desc')->take(4)->get();
+    // $tags = Tag::orderby('id','desc')->take(10)->get();
+    // $forslides = post::all();
     
-    return view('web.index',compact('item','cats','forslides','tags'));
+    // return view('web.index',compact('item','cats','forslides','tags'));
         
     }
 

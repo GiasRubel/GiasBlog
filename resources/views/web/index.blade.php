@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 @endsection
 @section('body')
+
 <div class="col-md-9 bann-right">
 	<!-- banner -->
 	<div class="banner">		

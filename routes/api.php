@@ -19,6 +19,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
+Route::apiResource('/posts', 'postController');
+
+
 Route::get('/search', function(){
 	$querystring = Input::get('querystring');
 	$posts = post::where('title', 'like', '%'.$querystring.'%')->get();

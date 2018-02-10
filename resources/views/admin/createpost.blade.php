@@ -9,6 +9,7 @@
   <fieldset>
     <legend>Create Post</legend>
     
+  
     <div class="form-group">
       <label for="inputEmail" class="col-lg-2 control-label">Title</label>
       <div class="col-lg-8">
